@@ -68,22 +68,28 @@
                               <Insets bottom="10.0" />
                            </padding>
                         </HBox>
-                        <HBox alignment="CENTER_RIGHT">
+                        <HBox alignment="CENTER_LEFT">
                            <children>
+                              <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="100.0" text="Apellido" />
+                              <TextField id="txfApellidoCliente" fx:id="txfTelefonoCliente" minWidth="-Infinity" prefWidth="200.0">
+                                 <HBox.margin>
+                                    <Insets right="260.0" />
+                                 </HBox.margin>
+                              </TextField>
                               <Button id="btnGuardar" fx:id="btnGuardarCliente" mnemonicParsing="false" onAction="#insertarNuevoCliente" text="Guardar" />
                            </children>
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
                         </HBox>
-                        <ScrollPane minHeight="-Infinity" prefHeight="270.0">
+                        <ScrollPane minHeight="-Infinity" prefHeight="291.0" prefWidth="620.0">
                            <content>
                               <TableView fx:id="tblDatosClientes" prefWidth="609.0">
                                 <columns>
-                                  <TableColumn prefWidth="150.0" text="Codigo" />
-                                  <TableColumn prefWidth="150.0" text="Nombre" />
-                                    <TableColumn prefWidth="150.0" text="Apellido" />
-                                    <TableColumn prefWidth="150.0" text="Email" />
+                                  <TableColumn fx:id="colCodigo" prefWidth="150.0" text="Codigo" />
+                                  <TableColumn fx:id="colNombre" prefWidth="150.0" text="Nombre" />
+                                    <TableColumn fx:id="colApellido" prefWidth="150.0" text="Apellido" />
+                                    <TableColumn fx:id="colEmail" prefWidth="150.0" text="Email" />
                                 </columns>
                               </TableView>
                            </content>
