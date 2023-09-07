@@ -11,8 +11,7 @@ public class Cliente {
 	private String email;
 	private String telefono;
 	private Date fechaRegistro;
-	
-	
+		
 	
 	public Cliente(int idCliente, String codigo, String nombre, String email, String telefono, Date fechaRegistro) {
 		super();
